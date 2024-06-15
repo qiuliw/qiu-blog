@@ -4,6 +4,13 @@ on:
   # 推送时执行
   push:
     branches: [main, master]
+
+  # 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
+  permissions:
+    contents: read
+    pages: write
+    id-token: write
+
   # pr 时执行
   pull_request:
     branches: [main, master]
@@ -18,11 +25,7 @@ on:
   #   例如：笔者多次亲身经历，凌晨时间 pages build and deployment 任务大概能持续 8 分钟的 Current status: deployment_queued 状态，
   #        即使能进入 Current status: deployment_in_progress 和 Current status: syncing_files 状态，如果文件多点，没一会儿就 Error: Timeout reached, aborting! 超时失败了
   
-  # 允许读写仓库
-  permissions:
-    contents: read
-    pages: write
-    id-token: write
+
 
   schedule:
     - cron: 30 17 * * *
