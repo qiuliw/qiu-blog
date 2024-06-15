@@ -6,13 +6,15 @@ const sync = fg.sync;
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/categories/issues/': getItemsByDate("categories/issues"),
-  '/categories/fragments/': getItemsByDate("categories/fragments"),
-  '/categories/solutions/': getItemsByDate("categories/solutions"),
-  '/categories/tools/': getItemsByDate("categories/tools"),
+  // '/categories/fragments/': getItemsByDate("categories/fragments"),
+  // '/categories/solutions/': getItemsByDate("categories/solutions"),
+  // '/categories/tools/': getItemsByDate("categories/tools"),
 
   '/courses/java/': getItems("courses/java"),
-  '/courses/mysql/': getItems("courses/mysql"),
-  '/courses/mybatis/': getItems("courses/mybatis"),
+  // '/courses/mysql/': getItems("courses/mysql"),
+  // '/courses/mybatis/': getItems("courses/mybatis"),
+
+  '/bnotes/计算机组成/': getItems("bnotes/计算机组成"),
 }
 
 /**
